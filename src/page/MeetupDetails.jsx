@@ -6,7 +6,7 @@ const MeetupDetails = () =>
 {
   const { eventId } = useParams()
 
-  const { data, loading, error } = useFetch(`https://meetup-app-iota-black.vercel.app/meetups/${eventId}`)
+  const { data, loading, error } = useFetch(`https://bi-assignment1-backend-zeta.vercel.app/meetups/${eventId}`)
 
   console.log(data)
 

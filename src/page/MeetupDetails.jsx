@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import useFetch from "../useFetch"
-import Header from "../component/header"
+import Header from "../component/Header"
 
 const MeetupDetails = () =>
 {

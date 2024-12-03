@@ -1,4 +1,4 @@
-import Header from "./component/header"
+import Header from "./component/Header"
 import MeetupEvents from "./component/MeetupEvents"
 function App() {
   

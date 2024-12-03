@@ -9,7 +9,7 @@ const MeetupEvents = () =>
   const [eventType, setEventType] = useState('')
   const [search,setSearch] = useState('')
 
-  const { data, loading, error } = useFetch(`https://meetup-app-iota-black.vercel.app/meetups`)
+  const { data, loading, error } = useFetch(`https://bi-assignment1-backend-zeta.vercel.app/meetups`)
   
   const handleEventType = (e)=>
   {
@@ -17,14 +17,10 @@ setEventType(e.target.value)
   }
 
 
-  // const filterMeetup = eventType ? data.filter((event)=>event.eventType === eventType) : search ? data?.filter(event=>event.eventTags.join().includes(search) || event.title.includes(search)) : data
-  
+
 
   const filterMeetup = eventType ? data.filter((event)=>event.eventType === eventType).filter(event=>event.eventTags.join().includes(search) || event.title.includes(search)) :  search ? data?.filter(event=>event.eventTags.join().includes(search) || event.title.includes(search)) : data
-    // console.log(data?.filter(event=>event.eventTags.map(tag=>tag==="digital")))
-  // console.log(data?.filter(event => event.eventTags[0].includes(search) ||event.eventTags[1].includes(search)))
-  // console.log(data?.filter(event=>event.eventTags.join().includes(search) || curr.title.includes(search)))
-  // console.log(data?.reduce((acc, curr) => curr.eventTags.includes(search) || curr.title.includes(search) ?[...acc,curr]:acc ,[]))
+  
 
   const handleInput = (e) =>
   {

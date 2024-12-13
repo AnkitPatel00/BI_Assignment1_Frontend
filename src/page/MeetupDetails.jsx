@@ -69,7 +69,7 @@ const MeetupDetails = () =>
         
         )
       
-      : <div>{loading}<p>Loading...</p></div>}
+      : <div className="container mb-4">{loading}<p>Loading...</p></div>}
      
       
     </>) 
